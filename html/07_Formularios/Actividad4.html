@@ -3,12 +3,18 @@
   </head>
   <body>
     <h1>Formulario de Búsqueda de Cámaras</h1>
-  
-    <form action="/uf5/captura-de-pantalla-2023-10-27-162913.png.300x300_q85_crop.png" method="get">
- 
+
+
       <label for="busqueda">Buscar:</label><br>
       <input type="text" id="busqueda" name="busqueda" required><br><br>
-  
+
+      <label for="modelo">Modelo de camara de samsung:</label><br>
+      <select id="modelo" name="modelo" required>
+        <option value="Cámara Compacta Bridge - Samsung WB1100F">Cámara Compacta Bridge - Samsung WB1100F</option>
+        <option value="Hibrida Samsung NX3000">Hibrida Samsung NX3000</option>
+        <option value="DSLR - Samsung NX100">DSLR - Samsung NX100</option>
+        <option value="Compacto - Samsung PL55">Compacto - Samsung PL55</option>
+      </select><br><br>
 
       <input type="submit" value="Buscar">
     </form>
