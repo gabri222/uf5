@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Listado de Discos de Jazz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Listado de Discos de Jazz</h1>
-    <h2>Autor: Juan Pérez</h2>
-    <h3>Fecha de publicación: 1 de Febrero de 2024</h3>
-    <div id="breadcrumbs">
-        <a href="index.html">Inicio</a> > <a href="jazz.html">Jazz</a>
-    </div>
-    <div id="search">
-        <form action="">
-            <input type="text" placeholder="Buscar...">
-            <input type="submit" value="Buscar">
+    <header><h1></h1>
+        <nav>
+            <div style="text-align:center;">
+                <a href="./acticidad2.2.html">Ir a Ficha del los discos</a>
+            </div>
+        </nav>
+
+        <p style="text-align: center;">Estas aqui: <a href="#">Listado de discos de Jazz</a></p>
+
+        <form action="./Actividad2.2.html" style="text-align: center;">
+            <label for="buscar">Buscar</label>
+            <br>
+            <input type="text" id="buscar" name="buscar">
+            <br>
         </form>
-    </div>
-    <div id="discos">
-        <ul>
-            <li><a href="disco1.html">Disco 1</a></li>
-            <li><a href="disco2.html">Disco 2</a></li>
-            <!-- Más discos... -->
-        </ul>
-    </div>
-    <div id="navegador">
-        <a href="pagina_anterior.html">Anterior</a> | <a href="pagina_siguiente.html">Siguiente</a>
-    </div>
+    </header>
+
+    <article>
+        <section>
+            <h3>The Shape of Jazz to Come - Ornette Coleman </h3>
+            <p>Este disco, lanzado en 1959, es considerado uno de los mejores discos de jazz de todos los tiempos. Con la participación de leyendas del jazz como Don Cherry y Charlie Haden, “The Shape of Jazz to Come” es una obra maestra del jazz de vanguardia.</p>
+            <h3>A Love Supreme - John Coltrane</h3>
+            <p>Este disco, lanzado en 1959, es considerado uno de los mejores discos de jazz de todos los tiempos. Con la participación de leyendas del jazz como John Coltrane y Bill Evans, “Kind of Blue” es una obra maestra del jazz modal..</p>
+        </section>
+
+        <section>
+            <h3>Bitches Brew - Miles Davis</h3>
+            <p>Este disco, lanzado en 1970, es considerado uno de los mejores discos de jazz fusión de todos los tiempos. Con la participación de leyendas del jazz como Wayne Shorter y Joe Zawinul, “Bitches Brew” es una obra maestra del jazz eléctrico.</p>
+        </section>
+    </article>
+
 </body>
 </html>

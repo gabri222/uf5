@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ficha del Disco</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Ficha del Disco</h1>
-    <h2>Autor: Juan Pérez</h2>
-    <h3>Fecha de publicación: 1 de Febrero de 2024</h3>
-    <div id="breadcrumbs">
-        <a href="index.html">Inicio</a> > <a href="jazz.html">Jazz</a> > <a href="disco1.html">Disco 1</a>
-    </div>
-    <div id="search">
-        <form action="">
-            <input type="text" placeholder="Buscar...">
-            <input type="submit" value="Buscar">
+    <header><h1></h1>
+        <nav>
+            <div style="text-align:center;">
+                <a href="./Actividad2.1.html">Ir a Listado de los discos</a>
+            </div>
+        </nav>
+
+        <p style="text-align: center;">Estas aqui: <a href="#">Listado de discos de Jazz</a> ><a href="#">Ficha de los discos</a></p>
+
+        <form action="./Actividad2.1.html" style="text-align: center;">
+            <label for="buscar">Buscar</label>
+            <br>
+            <input type="text" id="buscar" name="buscar">
+            <br>
         </form>
-    </div>
-    <div id="disco">
-        <h2>Disco 1</h2>
-        <p>Descripción del disco...</p>
-    </div>
-    <div id="comentarios">
-        <h2>Comentarios:</h2>
-        <p>1. Carlos: ¡Gran artículo! Berserk es una de mis series favoritas y este artículo realmente capta su esencia.</p>
-        <p>2. María: Estoy de acuerdo con Carlos. Este artículo me hace querer volver a leer Berserk.</p>
-        <p>3. Pedro: ¡Buen trabajo, Juan! Has capturado perfectamente la esencia de Berserk.</p>
-    </div>
-    <div id="navegador">
-        <a href="disco_anterior.html">Disco Anterior</a> | <a href="disco_siguiente.html">Disco Siguiente</a>
-    </div>
+    </header>
+
+    <article>
+        <section>
+            <h3>The Shape of Jazz to Come</h3>
+            <p>Artista: Ornette Coleman</p>
+            <p>Fecha de Lanzamiento: Noviembre de 1959</p>
+            <p>Género: Jazz de vanguardia, Free jazz</p>
+            <p>Sello Discográfico: Atlantic 1317</p>
+        </section>
+        <br>
+        <section>
+            <h3>Título del Álbum: Bitches Brew</h3>
+            <p>Artista: John Coltrane</p>
+            <p>Fecha de Lanzamiento: Enero de 1965</p>
+            <p>Género: Jazz modal, post-bop, jazz espiritual</p>
+            <p>Sello Discográfico: Impulse!</p>
+        </section>
+        <br>
+        <section>
+            <h3>Título del Álbum: Bitches Brew</h3>
+            <p>Artista: Miles Davis</p>
+            <p>Fecha de Lanzamiento: Marzo de 1970</p>
+            <p>Género: Jazz fusión, jazz-rock, jazz de vanguardia</p>
+            <p>Sello Discográfico: Columbia7</p>
+        </section>
+        <br>
+    </article>
 </body>
 </html>
 
