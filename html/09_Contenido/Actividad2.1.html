@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ficha del Disco</title>
+    <title>Listado de Discos de Jazz</title>
 </head>
 <body>
-    <h1>Ficha del Disco</h1>
+    <h1>Listado de Discos de Jazz</h1>
+    <h2>Autor: Juan Pérez</h2>
+    <h3>Fecha de publicación: 1 de Febrero de 2024</h3>
     <div id="breadcrumbs">
-        <a href="index.html">Inicio</a> > <a href="jazz.html">Jazz</a> > <a href="disco1.html">Disco 1</a>
+        <a href="index.html">Inicio</a> > <a href="jazz.html">Jazz</a>
     </div>
     <div id="search">
         <form action="">
@@ -14,12 +16,15 @@
             <input type="submit" value="Buscar">
         </form>
     </div>
-    <div id="disco">
-        <h2>Disco 1</h2>
-        <p>Descripción del disco...</p>
+    <div id="discos">
+        <ul>
+            <li><a href="disco1.html">Disco 1</a></li>
+            <li><a href="disco2.html">Disco 2</a></li>
+            <!-- Más discos... -->
+        </ul>
     </div>
     <div id="navegador">
-        <a href="disco_anterior.html">Disco Anterior</a> | <a href="disco_siguiente.html">Disco Siguiente</a>
+        <a href="pagina_anterior.html">Anterior</a> | <a href="pagina_siguiente.html">Siguiente</a>
     </div>
 </body>
 </html>
