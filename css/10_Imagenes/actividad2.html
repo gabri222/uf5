@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            height: 100vh; /* Ocupa toda la altura del viewport */
+            margin: 0;
+            padding: 0;
+        }
+        .background {
+            background-image: url('ruta_a_tu_imagen.jpg'); /* Reemplaza esto con la ruta a tu imagen */
+            background-size: cover; /* Evita que la imagen se deforme */
+            background-position: center;
+            height: 100vh;
+        }
+        .contact-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="background">
+            <nav>
+                <ul class="contact-info">
+                    <li><a href="ruta_a_tu_CV.pdf">Curriculum Vitae</a></li>
+                    <li><a href="https://www.facebook.com/tu_usuario">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/tu_usuario">Twitter</a></li>
+                    <li><a href="mailto:tu_email@example.com">Email</a></li>
+                    <li><a href="https://www.tu_otra_pagina.com">Otra página</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>
