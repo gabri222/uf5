@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mi Página</title>
-    <style>
-        /* Aquí puedes añadir tus estilos CSS */
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <style>
+.header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            background-color: rgb(0, 255, 166);
+        }
+        .logo {
+            width: 95px;
+        }
+        .nav {
+            margin-right: 30px;
+            text-decoration: none;
+            color: black;
+        }    </style>
+</head>
     <header>
-        <img src="logo.png" alt="Logo"> <!-- Asegúrate de reemplazar 'logo.png' con la ruta de tu imagen de logo -->
+        <div class="header">
+        <img class="logo" src="imagenes/descarga (2).jpg" alt="eso"> 
         <nav>
-            <a href="#seccion1">Sección 1</a>
-            <a href="#seccion2">Sección 2</a>
-            <!-- Añade más hipervínculos según sea necesario -->
+            <a class="nav" href="#"><font-size></font-size>Principio</a>
+            <a class="nav" href="#">Informacion</a>
+            <a class="nav" href="#">Contacto</a>
         </nav>
-        <form action="/buscar" method="get">
-            <input type="text" name="q" placeholder="Buscar...">
-            <input type="submit" value="Buscar">
+        <form action="/search" method="get">
+            <input type="text" name="buscar" placeholder="Buscar">
         </form>
+        </div>
     </header>
-    <!-- El resto de tu página va aquí -->
 </body>
 </html>
