@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wheel {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 16px solid #3498db;
+            border-radius: 50%;
+            animation: spin 4s linear infinite;
+        }
+        .wheel::before, .wheel::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            background: #3498db;
+            transform: translate(-50%, -50%);
+        }
+        .wheel::before {
+            width: 80%;
+            height: 16px;
+        }
+        .wheel::after {
+            width: 16px;
+            height: 80%;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wheel"></div>
+
+</body>
+</html>
