@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San Valentín</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:black;
+        overflow:hidden;
+        position:relative;
+        color:white;
+    }
+
+    /* Flores alrededor */
+    body::before{
+        content:"🌹 🌸 🌺 🌷 🌹 🌸 🌺 🌷 🌹 🌸 🌺 🌷";
+        position:absolute;
+        top:10px;
+        left:0;
+        width:100%;
+        text-align:center;
+        font-size:28px;
+        animation: mover 6s linear infinite;
+    }
+
+    body::after{
+        content:"🌷 🌺 🌸 🌹 🌷 🌺 🌸 🌹 🌷 🌺 🌸 🌹";
+        position:absolute;
+        bottom:10px;
+        left:0;
+        width:100%;
+        text-align:center;
+        font-size:28px;
+        animation: mover 8s linear infinite reverse;
+    }
+
+    @keyframes mover{
+        0%{transform:translateX(-50px);}
+        50%{transform:translateX(50px);}
+        100%{transform:translateX(-50px);}
+    }
+
+    .flores-lado{
+        position:absolute;
+        top:0;
+        height:100%;
+        font-size:26px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        padding:10px;
+    }
+
+    .izq{ left:0; }
+    .der{ right:0; }
+
+    .card{
+        background:#111;
+        padding:40px;
+        border-radius:25px;
+        width:90%;
+        max-width:600px;
+        text-align:center;
+        box-shadow:0 0 40px rgba(255,0,90,0.4);
+        border:1px solid rgba(255,0,90,0.3);
+    }
+
+    h1{
+        font-size:38px;
+        margin-bottom:20px;
+        color:#ff2e75;
+        text-shadow:0 0 15px #ff2e75;
+    }
+
+    .mensaje{
+        background:#1c1c1c;
+        padding:20px;
+        border-radius:15px;
+        border:1px dashed #ff2e75;
+        font-size:18px;
+        line-height:1.5;
+    }
+
+    .btn{
+        margin-top:25px;
+        padding:12px 25px;
+        background:#ff2e75;
+        border:none;
+        border-radius:10px;
+        color:white;
+        font-weight:bold;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .btn:hover{
+        background:#ff5a9a;
+        transform:scale(1.05);
+        box-shadow:0 0 15px #ff2e75;
+    }
+
+    .footer{
+        margin-top:20px;
+        font-size:14px;
+        opacity:0.7;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="flores-lado izq">
+🌹 🌸 🌺 🌷 🌹 🌸 🌺 🌷 🌹
+</div>
+
+<div class="flores-lado der">
+🌷 🌺 🌸 🌹 🌷 🌺 🌸 🌹 🌷
+</div>
+
+<div class="card">
+    <h1>Feliz dia de San Vale, vale valetin</h1>
+
+    <div class="mensaje">
+        <strong>Mensaje:</strong><br><br>
+        Para usted boba hpt Carolina de las Carolinas, con mucho cariño pue.
+    </div>
+
+    <a href="video.html" class="btn">🌹 Ver sorpresa</a>
+
+    <div class="footer">
+        Hecho con maldad y visaje ✨
+    </div>
+</div>
+
+</body>
+</html>
